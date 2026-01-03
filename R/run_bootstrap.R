@@ -70,6 +70,8 @@ run_bootstrap <- function(n_bootstraps, n_observations, beta_g, beta_w, theta, v
   )
 }
 
+
+#########################
 #' Create coverage table from bootstrap results.
 #'
 #' @param betas_df Data frame with bootstrap beta estimates (one row per bootstrap).
@@ -133,3 +135,4 @@ coverage_table <- function(betas_df, se_df, true_beta_g, true_beta_w) {
   do.call(rbind, results_list)
 }
 
+#########################
